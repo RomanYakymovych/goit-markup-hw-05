@@ -109,19 +109,16 @@ body {
 header .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  gap: 40px
 }
 
 .logo {
+  margin-right: 76px;
   display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 28px;
 
   font-family: var(--secondary-font-font-family);
   font-weight: 800;
@@ -432,7 +429,6 @@ header .container {
 footer .container {
   display: flex;
   align-items: baseline;
-  gap: 0 120px;
 }
 
 .footer .logo {
@@ -442,12 +438,15 @@ footer .container {
 
 .footer-text {
   max-width: 264px;
-  margin-right: 120px;
   color: var(--accent-text-color);
 }
 
 .decorarion-footer {
   color: var(--white-color);
+}
+
+.footer-socials{
+  margin-right: 80px;
 }
 
 .footer-socials-text {
@@ -491,6 +490,47 @@ footer .container {
 
 .footer-socials-icon {
   display: block;
+}
+
+.footer-form-btn {
+  padding: 8px 24px;
+  min-width: 165px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon-form {
+  fill: var(--white-color);
+  margin-left: 16px;
+}
+
+.footer-form {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-input {
+  border-radius: 4px;
+  border: 1px solid var(--white-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: transparent;
+  padding: 7px 16px;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  min-width: 264px;
+  height: 40px;
+}
+
+.footer-input::placeholder {
+  font-size: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
 }
 
 /* =============== Modal window =============== */
@@ -605,7 +645,7 @@ footer .container {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--colorlabel);
+  color: var(--svg-fill-color);
   display: block;
   margin-bottom: 4px;
 }
@@ -660,6 +700,7 @@ footer .container {
   min-width: 169px;
   margin: 0 auto;
   padding: 16px 32px;
+  display: block;
 }
 
 .main-button {
@@ -667,7 +708,6 @@ footer .container {
   color: var(--white-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
-  display: block;
   border: none;
 }
 
